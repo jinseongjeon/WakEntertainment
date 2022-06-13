@@ -1007,6 +1007,7 @@ li img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    word-break: keep-all;
 }
 .nope img{
     width: 30rem;

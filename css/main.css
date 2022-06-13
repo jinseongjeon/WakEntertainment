@@ -10,6 +10,7 @@ body{
     -moz-user-select:none;
     -ms-user-select:none;
     user-select:none;
+    overflow-y: visible;
 }
 
 /*헤드*/
@@ -992,4 +993,39 @@ li img{
 }
 .cancel:hover{
     background-image: url('../img/cancel-hover.svg');
+}
+
+.nope{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+    top:0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nope img{
+    width: 30rem;
+    height: auto;
+}
+.nope p{
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 3rem;
+}
+
+@media (max-width: 1599px) {
+    .nope{
+        display: flex;
+    }
+    html,
+    body{
+        overflow-y: hidden;
+    }
 }
